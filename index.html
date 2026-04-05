@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TJ Singing Downloads</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div class="eyebrow">TJ Singing Releases</div>
+        <h1>다운로드 파일 모아보기</h1>
+        <p>
+          GitHub Releases에 올라온 배포 파일을 이 페이지에서 바로 내려받을 수
+          있습니다. 최신 버전부터 순서대로 정리되어 있고, 각 릴리즈의 첨부
+          파일을 바로 열거나 다운로드할 수 있어요.
+        </p>
+        <div class="hero-meta">
+          <div class="meta-pill" id="repo-name">dokdo2005/tj-singing-public</div>
+          <div class="meta-pill" id="release-count">불러오는 중...</div>
+        </div>
+      </section>
+
+      <section class="section-title">
+        <h2>Release Assets</h2>
+        <span id="updated-at">목록을 불러오는 중입니다.</span>
+      </section>
+
+      <p id="status" class="status-card">
+        GitHub Releases 데이터를 가져오는 중입니다.
+      </p>
+      <section id="release-list" class="release-list" hidden></section>
+
+      <footer>
+        공개 GitHub API를 사용합니다. 잠시 후에도 보이지 않으면 Releases가 비어
+        있거나 일시적으로 API 제한에 걸렸을 수 있습니다.
+      </footer>
+    </main>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
